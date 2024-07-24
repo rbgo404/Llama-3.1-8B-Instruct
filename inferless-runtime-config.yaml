@@ -3,4 +3,4 @@ build:
   python_packages:
     - "vllm==0.5.3"
     - "vllm-flash-attn==2.5.9.post1"
-    - "transformers==4.41.2"
+    - "transformers==4.42.4"
