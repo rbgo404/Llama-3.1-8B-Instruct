@@ -1,21 +1,11 @@
 from vllm import LLM, SamplingParams
 from transformers import AutoTokenizer
-from huggingface_hub import snapshot_download
-import os
 
 class InferlessPythonModel:
     def initialize(self):
-        HF_TOKEN = os.getenv("HF_TOKEN")
-        VOLUME_NFS = os.getenv("VOLUME_NFS")
-        
-        if os.path.exists(VOLUME_NFS + "/generation_config.json") == False :
-            snapshot_download(
-            "meta-llama/Meta-Llama-3.1-8B-Instruct",
-            local_dir=VOLUME_NFS,
-            token=HF_TOKEN)
-        
-        self.llm = LLM(model=VOLUME_NFS,dtype="float16")
-        self.tokenizer = AutoTokenizer.from_pretrained(VOLUME_NFS)
+        model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
+        self.llm = LLM(model=model_id,dtype="float16")
+        self.tokenizer = AutoTokenizer.from_pretrained(model_id)
 
     def infer(self, inputs):
         prompts = inputs["prompt"]
