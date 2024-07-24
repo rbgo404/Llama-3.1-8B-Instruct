@@ -1,5 +1,5 @@
 # Tutorial - Deploy Llama-3.1-8B-Instruct using Inferless
-[Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct) model is part of Meta's advanced suite of multilingual large language models. This 8B Instruct model has been fine-tuned using supervised fine-tuning (SFT) and reinforced through reinforcement learning with human feedback (RLHF). This combination of methodologies ensures that the model not only performs with high accuracy but also aligns closely with human preferences on metrics like helpfulness and safety.
+[Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct) model is part of Meta's advanced suite of multilingual large language models. This 8B Instruct model has been fine-tuned using supervised fine-tuning (SFT) and reinforced through reinforcement learning with human feedback (RLHF). This combination of methodologies ensures that the model not only performs with high accuracy but also aligns closely with human preferences for helpfulness and safety.
 
 ## TL;DR:
 - Deployment of Llama-3.1-8B-Instruct model using [vllm](https://github.com/vllm-project/vllm).
