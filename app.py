@@ -10,7 +10,7 @@ class InferlessPythonModel:
         HF_TOKEN = os.getenv("HF_TOKEN")
         VOLUME_NFS = os.getenv("VOLUME_NFS")
         
-        if os.path.exists(VOLUME_NFS + "generation_config.json") == False :
+        if os.path.exists(VOLUME_NFS + "/generation_config.json") == False :
             snapshot_download(
             "meta-llama/Meta-Llama-3.1-8B-Instruct",
             local_dir=VOLUME_NFS,

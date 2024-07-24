@@ -1,6 +1,5 @@
 build:
   cuda_version: "12.1.1"
   python_packages:
-    - "vllm==0.5.3"
-    - "vllm-flash-attn==2.5.9.post1"
-    - "transformers==4.42.4"
+    - "vllm==0.5.3.post1"
+    - "transformers==4.43.1"
