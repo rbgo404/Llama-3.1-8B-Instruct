@@ -26,11 +26,9 @@ class InferlessPythonModel:
         top_k = inputs.get("top_k",40)
         max_tokens = inputs.get("max_tokens",256)
 
-        
         sampling_params = SamplingParams(temperature=temperature,top_p=top_p,repetition_penalty=repetition_penalty,
                                          top_k=top_k,max_tokens=max_tokens)
         input_text = self.tokenizer.apply_chat_template([{"role": "user", "content": prompts}], tokenize=False)
-
         result = self.llm.generate(input_text, sampling_params)
         result_output = [output.outputs[0].text for output in result]
 
