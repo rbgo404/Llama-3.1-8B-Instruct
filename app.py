@@ -1,7 +1,6 @@
 from vllm import LLM, SamplingParams
 from transformers import AutoTokenizer
 from huggingface_hub import snapshot_download
-from pathlib import Path
 import os
 
 class InferlessPythonModel:
