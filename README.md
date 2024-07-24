@@ -23,6 +23,13 @@ To access the custom runtime window in Inferless, simply navigate to the sidebar
 
 Next, provide a suitable name for your custom runtime and proceed by uploading the **inferless-runtime-config.yaml** file given above. Finally, ensure you save your changes by clicking on the save button.
 
+### Add Your Hugging Face Access Token
+Go into the `inferless.yaml` and replace `<YOUR_HUGGINGFACE_ACCESS_TOKEN>` with your hugging face access token. Make sure to check the repo is private to protect your hugging face token.
+
+### Add Your Inferless NFS Volumes Path
+Go into the `inferless.yaml` and replace `<YOUR_NFS_VOLUME>` with your NFS volume mount path. Make sure to check the repo is private to protect your NFS volume mount path.
+
+
 ### Import the Model in Inferless
 Log in to your inferless account, select the workspace you want the model to be imported into and click the Add Model button.
 
