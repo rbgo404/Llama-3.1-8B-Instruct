@@ -5,7 +5,6 @@ import os
 
 class InferlessPythonModel:
     def initialize(self):
-        
         HF_TOKEN = os.getenv("HF_TOKEN")
         VOLUME_NFS = os.getenv("VOLUME_NFS")
         
